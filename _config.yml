@@ -1,0 +1,58 @@
+# 这是博客配置界面
+
+## 设置文章生成
+markdown: kramdown
+kramdown:
+    input: GFM
+    hard_wrap: false
+highlighter : rouge
+permalink: /:year/:month/:day/:title.html
+
+lang: zh-Hans # the language of your site, default as "en" # 语言
+# timezone: Asia/Shanghai
+
+## 网站设置
+title: "碎言碎语" ## 网站名
+author: "syoran" ## 网站作者
+disqus: "gopherwood"  ## disqus评论设置
+favicon: favicon.ico
+description: 一个人微博 #网站描述
+
+## 文章配置
+### excerpt 摘要设置，方法1.excerpt_separator: <!--more--> 手动设置摘要,方法2.excerpt_type: text # text (default), html，选择 text 自动设置摘要截取前 350 字，过滤掉非文本元素。html 则与方法 1 相同。
+excerpt_type: 350
+
+## 菜单栏设置
+navigations:
+  - title: 归档
+    href: /archive.html
+  - title: 标签云
+    href: /tags.html
+  - title: 关于
+    href: /about.html
+  #- title: Subscribe
+    #class: fa fa-rss
+    #href: /atom.xml
+
+## 插件
+plugins: 
+  - jekyll-paginate
+
+## 分页
+paginate: 3
+paginate_path: /page:num
+
+## 本地服务器
+port: 4040
+
+## 默认设置
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+
+## ChangeLog
+# - 200809 创建

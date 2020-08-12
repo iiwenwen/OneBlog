@@ -1,0 +1,39 @@
+.card-header{
+    padding-top: 3rem !important
+    padding-bottom: 0
+}
+.card-header p{
+    margin-bottom: 0;
+}
+
+p{
+    margin-bottom: 1.2rem;
+    /*line-height: 1.7; */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  line-height: 2.1;
+  color: #343a40;
+  font-size: 14px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.35;
+}
+a, .page-link{
+  color: #343a40;
+}
+
+footer {
+    line-height: 1.5rem;
+    padding: 1.25rem 0;
+    color: var(--gray);
+    text-align: center;
+    width: 100%;
+}
