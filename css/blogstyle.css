@@ -37,3 +37,7 @@ footer {
     text-align: center;
     width: 100%;
 }
+
+a:hover {
+  color:  #c9c9c9;
+}
