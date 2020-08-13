@@ -20,6 +20,7 @@ body{
   line-height: 2.1;
   color: #343a40;
   font-size: 14px;
+  max-width: 42rem !important;
 }
 
 
@@ -40,4 +41,8 @@ footer {
 
 a:hover {
   color:  #c9c9c9;
+}
+
+.card-header, .card-footer, .card{
+  background-color: #ffffff;
 }

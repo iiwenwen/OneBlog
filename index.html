@@ -4,7 +4,7 @@ layout: default
 {% for post in paginator.posts %}
 <!-- 这是文章内容 -->
 <div class="card mb-4 px-5">
-    <div class="card-header bg-transparent pb-1 ">
+    <div class="card-header  pb-1 ">
         <a class="float-left" href="{{post.url}}">
            {{ post.date | date:"%Y-%m-%d" }}
         </a>
@@ -21,7 +21,7 @@ layout: default
         </div>
     </div>
     <!-- 这是文章结尾 -->
-    <div class="card-footer bg-transparent text-center">
+    <div class="card-footer text-center">
         <a href="{{ post.url }}">阅读全文</a>
     </div>
 </div>
