@@ -2,11 +2,11 @@
 layout: default
 ---
 {% for post in paginator.posts %}
-<!-- 这是文章内容 -->
+<!-- 这是标题栏 -->
 <div class="card mb-4 px-5">
     <div class="card-header  pb-1 ">
         <a class="float-left" href="{{post.url}}">
-           {{ post.date | date:"%Y-%m-%d" }}
+            {{ post.date | date:"%Y-%m-%d" }}
         </a>
         {% if post.tags %}
         {% for tag in post.tags limit: 1 %}
@@ -14,12 +14,24 @@ layout: default
         {% endfor %}
         {% endif %}
     </div>
+    <!-- 这是图文模块 -->
+    {% if post.background_image %}
+    <img class="card-img-top" src="{{post.background_image}}" alt="Card image cap">
+    <div class="card-img-overlay">
+        <h5 class="card-title">{{ post.title}}</h5>
+        <div class="card-text">
+            <p>{{ post.excerpt }}</p>
+        </div>
+    </div>
+    <!-- 这是文字模块 -->
+    {% else %}
     <div class="card-body">
         <h5 class="card-title">{{ post.title}}</h5>
         <div class="card-text">
             <p>{{ post.excerpt }}</p>
         </div>
     </div>
+    {% endif %}
     <!-- 这是文章结尾 -->
     <div class="card-footer text-center">
         <a href="{{ post.url }}">阅读全文</a>
