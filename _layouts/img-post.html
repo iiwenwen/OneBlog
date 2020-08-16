@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<!-- 这是独立内容块1 -->
+<div class="card mb-4 px-5">
+    <div class="card-header  pb-1 ">
+        <a class="float-left">
+            {{ page.date | date:"%Y-%m-%d" }}
+        </a>
+        {% if page.tags %}
+        {% for tag in page.tags limit: 1%}
+        <a class="float-right text-muted" href="tags.html#{{ tag }}">{{ tag | capitalize }}</a>
+        {% endfor %}
+        {% endif %}
+    </div>
+    <img class="card-img-top" src="{{page.background_image}}" alt="Card image cap">
+    <div class="card-img-overlay">
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">{{ page.title }}</h5>
+        <div class="card-text">
+            {{ content }}
+        </div>
+    </div>
+    <!-- 这是文章结尾 -->
+    <div class="card-footer text-center">
+        <a href="{{ page.url }}">阅读全文</a>
+    </div>
+</div>
+<nav class="blog-pagination">
+    {% if page.next %}
+    <a class="btn btn-outline-secondary" href="{{ page.next.url }}">上一篇</a>
+    {% endif %}
+    {% if page.previous %}
+    <a class="btn btn-outline-secondary" href="{{ page.previous.url }}">下一篇</a>
+    {% endif %}
+</nav>
