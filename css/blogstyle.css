@@ -1,36 +1,50 @@
-.card-header{
-    padding-top: 3rem !important
-    padding-bottom: 0
+/*修改卡片头部内边距与下边距*/
+.card-header {
+    padding-top: 3rem !important；
+    padding-bottom: 0；
 }
-.card-header p{
+/*修改卡片头部内文字下边距*/
+.card-header p {
     margin-bottom: 0;
 }
-
-p{
+/*修改段落间外边距*/
+p {
     margin-bottom: 1.2rem;
     /*line-height: 1.7; */
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-
-body{
-  line-height: 2.1;
-  color: #343a40;
-  font-size: 14px;
-  max-width: 42rem !important;
+/*修改主体行高、字体颜色、字体大小、整体宽度*/
+body {
+    line-height: 2.1;
+    color: #343a40;
+    font-size: 14px;
+    max-width: 42rem !important;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.35;
+/*修改各级标题的行高、字体粗细*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.35;
+    font-weight:normal;
 }
-a, .page-link{
-  color: #343a40;
+/*修改二级标题字体大小*/
+h2{
+  font-size: 1.1rem;
 }
-
+/*修改链接与翻页的字体颜色*/
+a,
+.page-link {
+    color: #343a40;
+}
+/*修改脚部行高、内间距、字体颜色、文字位置、宽度*/
 footer {
     line-height: 1.5rem;
     padding: 1.25rem 0;
@@ -38,11 +52,18 @@ footer {
     text-align: center;
     width: 100%;
 }
-
+/*修改鼠标移动至链接时颜色*/
 a:hover {
-  color:  #c9c9c9;
+    color: #c9c9c9;
 }
-
-.card-header, .card-footer, .card{
-  background-color: #ffffff;
+/*修改卡片头部、脚部、整体背景颜色*/
+.card-header,
+.card-footer,
+.card {
+    background-color: #ffffff;
+}
+/*修改文字浮图片位置*/
+.card-img-overlay {
+    top: auto;
+    margin: 2.5rem;
 }
