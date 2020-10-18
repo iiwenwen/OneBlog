@@ -18,7 +18,7 @@ layout: default
     {% if post.background_image %}
     <img class="card-img-top" src="{{post.background_image}}" alt="Card image cap">
     <div class="card-img-overlay">
-        <h5 class="card-title">{{ post.title}}</h5>
+        <h1 class="card-title">{{ post.title}}</h1>
         <div class="card-text">
             <p>{{ post.excerpt }}</p>
         </div>
@@ -26,7 +26,7 @@ layout: default
     <!-- 这是文字模块 -->
     {% else %}
     <div class="card-body">
-        <h5 class="card-title">{{ post.title}}</h5>
+        <h1 class="card-title">{{ post.title}}</h1>
         <div class="card-text">
             <p>{{ post.excerpt }}</p>
         </div>

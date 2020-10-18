@@ -36,6 +36,9 @@ h6 {
     font-weight:normal;
 }
 /*修改二级标题字体大小*/
+h1{
+    font-size: 1.2rem;
+}
 h2{
   font-size: 1.1rem;
 }
